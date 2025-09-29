@@ -7,13 +7,14 @@
 </head>
 <body>
     <div>
-        <p>{{mssg}}</p>
+        <p>{{msg}}</p>
 
-        <form action="/login"></form>
-        <input type="text", id="username", name="username", placeholder="username here...">
-        <input type= "password", id="password", name="password", placeholder="password here...">
-        <br><br>
-        <button type="submit">Login Now</button>
+        <form action="/login", method="POST">
+            <input type="text" , id="username" , name="username" , placeholder="username here...">
+            <input type="password" , id="password" , name="password" , placeholder="password here...">
+            <br><br>
+            <button type="submit">Login Now</button>
+        </form>
     </div>
      <h2>Dont have an account?</h2> <a href="/register">Register Now</a>
 </body>

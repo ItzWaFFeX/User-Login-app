@@ -9,14 +9,16 @@
 
 <body>
     <div>
-        <p>{{mssg}}</p>
+        <p>{{msg}}</p>
 
-        <form action="/register"></form>
-        <input type="text" , id="username" , name="username" , placeholder="Enter password">
-        <input type="password" , id="password" , name="password" , placeholder="Enter password">
-        <br><br>
-        <input type= "email", id="email", name="email", placeholder="email here...">
-        <button type="submit">Register Now</button>
+        <form action="/register_user", method="POST">
+            <input type="text" , id="username" , name="username" , placeholder="Enter password">
+            <input type="password" , id="password" , name="password" , placeholder="Enter password">
+            <br><br>
+            <input type="email" , id="email" , name="email" , placeholder="email here...">
+            <button type="submit">Register Now</button>
+        </form>
+       
     </div>
 </body>
 
